@@ -1,0 +1,48 @@
+{
+  "name": "panel-storm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:build": "concurrently --kill-others \"npm run build\" \"npm run build:blocks\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "build:blocks": "wp-scripts build src/blocks/newsletter/index.js src/blocks/newsletter/frontend.js --output-path=build-blocks",
+    "start:blocks": "wp-scripts build src/blocks/newsletter/index.js src/blocks/newsletter/frontend.js --output-path=build-blocks",
+    "plugin-zip": "wp-scripts plugin-zip"
+  },
+  "files": [
+    "src/assets/**",
+    "build/**",
+    "build-block/**",
+    "classes/**",
+    "languages/**",
+    "modules/**",
+    "readme.txt",
+    "changelog.txt",
+    "farazsms.php",
+    "index.php"
+  ],
+  "keywords": [],
+  "author": "wpstorm",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@wordpress/i18n": "^4.29.0",
+    "@wordpress/scripts": "^26.0.0",
+    "browser-sync-webpack-plugin": "^2.3.0"
+  },
+  "dependencies": {
+    "@wordpress/element": "^5.6.0",
+    "bootstrap": "^5.2.3",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-color": "^2.19.3",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.9.0",
+    "react-select": "^5.7.2",
+    "react-transition-group": "^4.4.5",
+    "use-immer": "^0.8.1",
+    "webpack": "^5.76.3"
+  }
+}

@@ -1,0 +1,44 @@
+@import "./variables.scss";
+
+/* ===== Sidebar ===== */
+.container {
+  font-family: IRANSans, serif;
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+}
+main {
+  font-family: IRANSans, serif;
+  width: 100%;
+  padding: 20px;
+  background-color: $c-background-tertiary;
+}
+.faraz-sidebar {
+  .link {
+    font-family: IRANSans, serif;
+    display: flex;
+    align-items: center;
+    padding: 0.75em 1em;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: 500;
+    gap: 15px;
+    color: $c-text-action;
+    transition: all 0.5s;
+    &:hover,
+    &:focus,
+    &.active {
+      background-color: $c-background-tertiary;
+      color: $c-accent-primary;
+      border: none;
+    }
+
+    & + * {
+      margin-top: 0.25rem;
+    }
+  }
+  .icon,
+  .link_text {
+    font-size: 18px;
+  }
+}
