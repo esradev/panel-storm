@@ -102,27 +102,17 @@ class Panel_Storm_Settings {
 	 */
 	public function init_menu() {
 		add_menu_page(
-			__( 'Panel_Storm', 'panel-storm' ),
-			__( 'Panel_Storm', 'panel-storm' ),
+			__( 'Panel Storm', 'panel-storm' ),
+			__( 'Panel Storm', 'panel-storm' ),
 			'manage_options',
 			PANEL_STORM_SLUG,
 			[
 				$this,
 				'admin_page',
 			],
-			'dashicons-testimonial',
-			100
-		);
-		add_submenu_page(
-			PANEL_STORM_SLUG,
-			__( 'Panel_Storm', 'panel-storm' ),
-			__( 'Settings', 'panel-storm' ),
-			'manage_options',
-			PANEL_STORM_SLUG,
-			[
-				$this,
-				'admin_page',
-			]
+			'dashicons-admin-customizer',
+			2
+
 		);
 	}
 

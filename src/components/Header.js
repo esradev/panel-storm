@@ -21,7 +21,7 @@ function Header() {
                         <a href="https://wpstorm.ir/" target="_blank">
                             {__("Official Website", "panel-storm")}
                         </a>
-                        <a href="https://wpstorm.ir/">
+                        <a href="https://wpstorm.ir/" target="_blank">
                             {__("Report Issues", "panel-storm")}
                         </a>
                     </nav>
@@ -29,12 +29,13 @@ function Header() {
                         <a
                             href="https://wpstorm.ir/"
                             className="icon-button"
+                            target="_blank"
                         >
                             <BiSupport/>
                         </a>
-                        <a href="#" className="icon-button">
-                            <AiOutlineBell/>
-                        </a>
+                        {/*<a href="#" className="icon-button">*/}
+                        {/*    <AiOutlineBell/>*/}
+                        {/*</a>*/}
                     </div>
                 </div>
             </div>
